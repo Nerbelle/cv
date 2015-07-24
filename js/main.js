@@ -1,7 +1,7 @@
 var template =0;
 var reason='default';
 hide_specific_sections();
-generateRandomTemplate();
+
 
 function generateRandomTemplate(){
 
@@ -11,8 +11,9 @@ num=NumRandom()
 
 }
 template=num;
-
-show_specific_sections('hots_'+reason+'_'+template);
+var e = document.getElementById("gameSelection");
+var strGame =  e.options[e.selectedIndex].value;
+show_specific_sections(strGame+'_'+reason+'_'+template);
 
 }
 function NumRandom(){
@@ -29,18 +30,18 @@ return number
     // show_specific_sections(_select[_select.selectedIndex].id)
 // }
 function change_game(id) {
+
 var e = document.getElementById(id);
 var strGame =  e.options[e.selectedIndex].value;
 var strGameTxt=e.options[e.selectedIndex].text
-
+hide_specific_sections()
 if(strGame!="---")
 {
-
 var e = document.getElementById(id);	
 document.getElementById("game_content").style.display=''
 document.getElementById('ddl_'+strGame).style.display=''
 document.getElementById("rec_"+strGame).style.display=''
-
+generateRandomTemplate()
 var tag_game = document.getElementsByName('game')
 
     for (var i=0; i<tag_game.length; i++) {
@@ -86,26 +87,12 @@ function hide_specific_sections() {
 }
 
 
-
 function show_specific_sections(id) {
     hide_specific_sections()
     document.getElementById(id).style.display = '';
-
-    // if (id == 'hots') {
-        // change_region(document.getElementById('bnet_region'))
-        // document.getElementById('input_bnet').style.display = '';
-        // document.getElementById('ted_nickname').style.display = 'none';
-        // document.getElementById('ted_title').style.display = 'none';
-        // document.getElementById('ted_nickname_bnet').style.display = '';
-        // document.getElementById('ted_title_bnet').style.display = '';
-    // } else if (id == 'lol') {
-        // change_region(document.getElementById('lol_region'))
-        // document.getElementById('input_lol').style.display = '';
-        // document.getElementById('ted_title_lol').style.display = '';
-        // document.getElementById('ted_title').style.display = 'none';
-        // document.getElementById('ted_nickname').style.display = '';
-    // } else {
-        // document.getElementById('ted_title').style.display = '';
-        // document.getElementById('ted_nickname').style.display = '';
-    // }
+	var e = document.getElementById("gameSelection");
+	var strGame =  e.options[e.selectedIndex].value;
+   document.getElementById('ddl_'+strGame).style.display=''
+document.getElementById("rec_"+strGame).style.display=''
+	
 }
