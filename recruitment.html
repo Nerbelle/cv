@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Chaos Vanguard - HotS Recruitment</title>
+		<!--Hi CV! Nerbelle here! I love you all. Thanks to Agamemnon for letting me plagiarize his html/js/css file-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+<p> <a href="http://reinaldons.github.io/cv/interview.html" target="blank">CLICK HERE FOR THE APPLICATION PAGE </a></p>
+		<p> Recruiting at: 
+        <select onchange="select_section(this)">
+            <!--<option id="general">General</option>
+            <option id="lol">League of Legends</option>
+            <option id="archeage">Archeage</option>
+            <option id="h1z1">H1Z1</option>
+            <option id="smite">Smite</option>
+            <option id="csgo">Counter Strike</option>
+            <option id="dota">Dota</option>-->
+            <option id="hots">Heroes of the Storm</option>
+            <!--<option id="warframe">Warframe</option>
+            <option id="gta">Grand Theft Auto</option>-->
+        </select></p>
+        <h1>Recruiting</h1>
+		
+		<h2>Recruitment threads</h2>
+		  <p class="alert">Places to recruit in <span name="game">Game</span></p>
+		<ul id="rec_HotS" class="">
+      
+                <li><a href="https://www.reddit.com/r/heroesofthestorm/" target="blank">Reddit <-- Please check for the weekly LFG thread</a></li>
+                <li><a href="http://us.battle.net/heroes/en/forum/17566182/" target="blank">Battle.net <-- Please double check the users</a></li>
+            </ul>
+		<h2>Recruitment template</h2>
+		 <p><b>YOUR</b> Battletag: <input type="text" id="recruiterName" onchange="change_recruiter(this, 'recruiter')">
+		    <p class="alert">User is looking for group because: select a REASON why he posted(he's new to the game? tired of going solo etc.</p>
+					    <p class="alert"><i><b>Click Generate Different Template</b> to <b>create</b> a NEW template if you already used the current template</i></p>
+		 <p> REASON: 
+        <select id='ddl_hots' onchange="change_reason('ddl_hots')">
+            <option value="default">Default</option>
+            <option value="new">New to the game</option>
+            <option value="solo">Tired of Solo Gaming</option>
+            <option value="team">LF Team/Group</option>
+        </select> <input type="button" value="Generate Different Template" onclick="generateRandomTemplate()"></input></p>
+		  <p> BattleTag of the user you are recruiting(optional): <input type="text" id="fname" onchange="change_tag(this, 'prospect')">  <input type="button" value="Go">
+		  
+		  <!--DEFAULT TEMPLATES -->
+        <p id="hots_default_1" class="block specific_section">
+            Hello <span name="prospect">there</span>! I suggest that you join our gaming community-The Chaos Vanguard, We have lots of great Players of various skill levels and hero specialties. You will be on a trial period but you can already play whatever game mode you like with members once you join. We have tournaments against members or our competitive teams as well as other communities. 
+<br/><br/>
+			Hope to see you apply soon :)
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+    <p id="hots_default_2" class="block specific_section" >
+            Hey <span name="prospect">there</span>! You should check our gaming community-The Chaos Vanguard, We have the largest number of HotS players in a community. So definitely you will able to have a full party 24/7.
+<br/><br/>
+			Thank you and hoping to see your application soon.
+			
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		  <p id="hots_default_3" class="block specific_section" >
+            Hi <span name="prospect">there</span>! You might be interested in checking our community-The Chaos Vanguard, we have lots of great Players of various skill levels and hero specialties. We have lots of active and friendly players who you can party with 24/7 and have fun with. We also have inhouse tournaments/events. Hope you give us a chance and check us out. Thank you!
+
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		 <p id="hots_default_4" class="block specific_section" >
+            Greetings <span name="prospect"></span>! Probably you should join our gaming community-The Chaos Vanguard. We have the largest HotS Players in a community. We have lots of friendly and active players 24/7 that will suit your preference in playing HotS whether its competitive or casual.
+<br/><br/>
+			Check us out. And I can atest that you will not regret it.
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		 <p id="hots_default_5" class="block specific_section" >
+            Hey <span name="prospect">bro</span>! Join our community-The Chaos Vanguard. We have active and friendly players 24/7 with various skill levels. You will definitely find someone within the community to play with regularly whether its casual or competitive. We also have various events not just for HotS but the entire community as well.
+<br/><br/>
+			Thanks and hope you join our community.
+			
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+        <!--END OF DEFAULT TEMPLATES -->
+		  <!--NEW TO THE GAME TEMPLATES -->
+        <p id="hots_new_1" class="block specific_section">
+            Hello <span name="prospect">there</span>! I suggest that you join our gaming community-The Chaos Vanguard, we have lots of great Players of various skill levels and hero specialties. We offer coaching to new comers so you can play the hero you like to its full potential.
+<br/><br/>
+			Thanks and hoping to see your application soon.
+			
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+    <p id="hots_new_2" class="block specific_section" >
+            Hey <span name="prospect">there</span>! You should our gaming community-The Chaos Vanguard, we have lots of great Players of various skill levels and hero specialties. We offer coaching to new comers so you can play the hero you like to its full potential.
+<br/><br/>
+			Thanks and hoping to see your application soon.
+			
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		  <p id="hots_new_3" class="block specific_section" >
+            Hi <span name="prospect">there</span>! You should our gaming community-The Chaos Vanguard, we have lots of great Players of various skill levels and hero specialties. You will be on a trial period but you can already play whatever game mode you like with members once you join. We have tournaments against members or our competitive teams as well as other communities. 
+<br/><br/>
+			Thanks and hope to see you in our community.
+			
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		 <p id="hots_new_4" class="block specific_section" >
+            Hi <span name="prospect">there</span>! You should our gaming community-The Chaos Vanguard, we have lots of great Players of various skill levels and hero specialties. You will be on a trial period but you can already play whatever game mode you like with members once you join. We have tournaments against members or our competitive teams as well as other communities. 
+<br/><br/>
+			Thanks and hope to see you in our community.
+			
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		 <p id="hots_new_5" class="block specific_section" >
+            Hi <span name="prospect">there</span>! You should our gaming community-The Chaos Vanguard, we have lots of great Players of various skill levels and hero specialties. You will be on a trial period but you can already play whatever game mode you like with members once you join. We have tournaments against members or our competitive teams as well as other communities. 
+<br/><br/>
+			Thanks and hope to see you in our community.
+			
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+        <!--END OF DEFAULT TEMPLATES -->
+        
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
