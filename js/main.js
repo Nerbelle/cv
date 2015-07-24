@@ -1,7 +1,9 @@
 var template =0;
 var reason='default';
 hide_specific_sections();
-
+var e = document.getElementById("gameSelection");
+var strGame =  e.options[e.selectedIndex].value;
+change_game('gameSelection')
 
 function generateRandomTemplate(){
 
