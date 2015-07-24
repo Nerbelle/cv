@@ -19,16 +19,26 @@ function NumRandom(){
 var number = Math.floor((Math.random() * 5) + 1)
 return number
 }
-function select_section(_select) {
-    var section_name_array = document.getElementsByName("section_name")
+// function select_section(_select) {
+    // var section_name_array = document.getElementsByName("section_name")
 
-    for (var i=0; i<section_name_array.length; i++) {
-        section_name_array[i].innerHTML = _select.value
+    // for (var i=0; i<section_name_array.length; i++) {
+        // section_name_array[i].innerHTML = _select.value
+    // }
+
+    // show_specific_sections(_select[_select.selectedIndex].id)
+// }
+function change_game(id) {
+var e = document.getElementById(id);
+var strGame=  e.options[e.selectedIndex].value;
+var strGameTxt=e.options[e.selectedIndex].text
+var tag_game = document.getElementsByName('game')
+
+    for (var i=0; i<tag_game.length; i++) {
+        tag_game[i].innerHTML =strGameTxt
+		tag_game[i].style.display=''
     }
-
-    show_specific_sections(_select[_select.selectedIndex].id)
 }
-
 
 function change_recruiter(_input, tag_id) {
     var tag_array = document.getElementsByName(tag_id)
