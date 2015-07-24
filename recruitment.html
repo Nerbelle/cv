@@ -34,10 +34,17 @@
 	
 		  <p class="alert">Places to recruit in <span name="game">Game</span></p>
 		
-		<ul id="rec_hots" class="">
+		<ul id="rec_hots" style="display:none" class="specific_section">
       
                 <li><a href="https://www.reddit.com/r/heroesofthestorm/" target="blank">Reddit <-- Please check for the weekly LFG thread</a></li>
                 <li><a href="http://us.battle.net/heroes/en/forum/17566182/" target="blank">Battle.net <-- Please double check the users</a></li>
+            </ul>
+		<ul id="rec_dota" style="display:none"  class="specific_section">
+      
+                <li><a href="https://www.reddit.com/r/dota2pubs/" target="blank">Reddit </a></li>
+                <li><a href="http://www.dota2portal.org/f11-clans-organizations" target="blank">dota2portal.org </a></li>
+				 <li><a href="http://www.joindota.com/en/forums/719-looking-to-play/723-people-to-play-with" target="blank">joindota.com</a></li>
+				  <li><a href="http://www.playdota.com/forums/forumdisplay.php?f=81" target="blank">playdota.com</a></li>
             </ul>
 		<h2>Recruitment template</h2>
 		 <p><b>YOUR</b> Battletag/Username: <input type="text" id="recruiterName" onchange="change_recruiter(this, 'recruiter')">
@@ -45,14 +52,20 @@
 					    <p class="alert"><i><b>Click Generate Different Template</b> to <b>create</b> a NEW template if you already used the current template</i></p>
 		
 		 <p> REASON: 
-        <select id="ddl_hots" onchange="change_reason('ddl_hots')" style="display:none">
+        <select id="ddl_hots" onchange="change_reason('ddl_hots')" style="display:none"  class="specific_section">
             <option value="default">Default</option>
             <option value="new">New to the game</option>
             <option value="solo">Tired of Solo Gaming</option>
             <option value="team">LF Team/Group</option>
-        </select> <input type="button" value="Generate Different Template" onclick="generateRandomTemplate()"></input></p>
+        </select> 
+		 <select id="ddl_dota" onchange="change_reason('ddl_dota')" style="display:none"  class="specific_section">
+            <option value="default">Default</option>
+            <option value="pubs">Looking for Pubs</option>
+         <!--    <option value="team">LF Team/Group</option> -->
+        </select>
+		<input type="button" value="Generate Different Template" onclick="generateRandomTemplate()"></input></p>
 		  <p> BattleTag of the user you are recruiting(optional): <input type="text" id="fname" onchange="change_tag(this, 'prospect')">  <input type="button" value="Go">
-		  
+		  <hots>
 		  <!--DEFAULT TEMPLATES -->
         <p id="hots_default_1" class="block specific_section">
             Hello <span name="prospect">there</span>! I suggest that you join our gaming community-The Chaos Vanguard, We have lots of great Players of various skill levels and hero specialties. You will be on a trial period but you can already play whatever game mode you like with members once you join. We have tournaments against members or our competitive teams as well as other communities. 
@@ -266,6 +279,115 @@
 			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
         </p>
         <!--END OF LFG QUEUE TEMPLATES -->
+		</hots>
+		<dota>
+		  <!--DEFAULT TEMPLATES -->
+        <p id="dota_default_1" class="block specific_section">
+            Hello <span name="prospect"></span>! I suggest that you join our gaming community-The Chaos Vanguard, We are a multi-gaming community that caters lot of games like H1Z1, Heroes of the Storm, Smite, LoL and especially DOTA 2. We have lots of active players(50+ on slow hours and 200+ on peak hours that you can interact and play various games with. Check us out!
+<br/><br/>
+			Hope to see you apply soon :)
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		  <p id="dota_default_2" class="block specific_section">
+            Hello <span name="prospect"></span>! I suggest that you join our gaming community-The Chaos Vanguard, We are a multi-gaming community that caters lot of games like H1Z1, Heroes of the Storm, Smite, LoL and especially DOTA 2. We have lots of active players(50+ on slow hours and 200+ on peak hours that you can interact and play various games with. Check us out!
+<br/><br/>
+			Hope to see you apply soon :)
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		  <p id="dota_default_3" class="block specific_section">
+            Hello <span name="prospect"></span>! I suggest that you join our gaming community-The Chaos Vanguard, We are a multi-gaming community that caters lot of games like H1Z1, Heroes of the Storm, Smite, LoL and especially DOTA 2. We have lots of active players(50+ on slow hours and 200+ on peak hours that you can interact and play various games with. Check us out!
+<br/><br/>
+			Hope to see you apply soon :)
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		  <p id="dota_default_4" class="block specific_section">
+            Hello <span name="prospect"></span>! I suggest that you join our gaming community-The Chaos Vanguard, We are a multi-gaming community that caters lot of games like H1Z1, Heroes of the Storm, Smite, LoL and especially DOTA 2. We have lots of active players(50+ on slow hours and 200+ on peak hours that you can interact and play various games with. Check us out!
+<br/><br/>
+			Hope to see you apply soon :)
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		  <p id="dota_default_5" class="block specific_section">
+            Hello <span name="prospect"></span>! I suggest that you join our gaming community-The Chaos Vanguard, We are a multi-gaming community that caters lot of games like H1Z1, Heroes of the Storm, Smite, LoL and especially DOTA 2. We have lots of active players(50+ on slow hours and 200+ on peak hours that you can interact and play various games with. Check us out!
+<br/><br/>
+			Hope to see you apply soon :)
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		 <!--END OF DEFAULT TEMPLATES -->
+		   <!--PUBS TEMPLATES -->
+        <p id="dota_pubs_1" class="block specific_section">
+            Hello there <span name="prospect"></span>! You should check our gaming community-The Chaos Vanguard, We have lots of members that play pubs like you and even ranked on high mmr players. 
+<br/><br/>
+			Hope you can check us out! You won't regret it!
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		  <p id="dota_pubs_2" class="block specific_section">
+            Hello <span name="prospect">man</span>! Join us at The Chaos Vanguard and have pubs with our friendly and active members! 
+<br/><br/>
+			Hope to see you in the community soon :)
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		  <p id="dota_pubs_3" class="block specific_section">
+            Join us at our gaming Community- The Chaos Vanguard <span name="prospect">Man</span>! We have lots of members doing pubs and just having fun rather than raging with toxic players. We even have a player schedule in our forums so you can check who are the members playing at your usual game time.
+<br/><br/>
+			Hope to see your application soon :)
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		  <p id="dota_pubs_4" class="block specific_section">
+            Hello there <span name="prospect"></span>! You should check our gaming community-The Chaos Vanguard, We have lots of members that play pubs like you and even ranked on high mmr players. 
+<br/><br/>
+			Hope you can check us out! You won't regret it!
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		  <p id="dota_pubs_5" class="block specific_section">
+            Hello there <span name="prospect"></span>! You should check our gaming community-The Chaos Vanguard, We have lots of members that play pubs like you and even ranked on high mmr players. 
+<br/><br/>
+			Hope you can check us out! You won't regret it!
+		<span name="recruiter" style="display:none"></span>
+				<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		
+		 <!--PUBS OF DEFAULT TEMPLATES -->
+		 
+		</dota>
 </div>
         <script src="js/main.js"></script>
     </body>
