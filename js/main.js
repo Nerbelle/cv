@@ -30,14 +30,26 @@ return number
 // }
 function change_game(id) {
 var e = document.getElementById(id);
-var strGame=  e.options[e.selectedIndex].value;
+var strGame =  e.options[e.selectedIndex].value;
 var strGameTxt=e.options[e.selectedIndex].text
+
+if(strGame!="---")
+{
+
+var e = document.getElementById(id);	
+document.getElementById("game_content").style.display=''
+document.getElementById('ddl_'+strGame).style.display=''
+document.getElementById("rec_"+strGame).style.display=''
+
 var tag_game = document.getElementsByName('game')
 
     for (var i=0; i<tag_game.length; i++) {
         tag_game[i].innerHTML =strGameTxt
 		tag_game[i].style.display=''
     }
+}else{
+document.getElementById("game_content").style.display='none'
+}
 }
 
 function change_recruiter(_input, tag_id) {
@@ -58,7 +70,7 @@ function change_tag(_input, tag_id) {
 }
 
 function change_reason(id){
-
+document.getElementById("game_content").style.display=''
 var e = document.getElementById(id);
 var strReason =  e.options[e.selectedIndex].value;
 reason=strReason
