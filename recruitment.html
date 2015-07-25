@@ -18,8 +18,9 @@
 			<p> Recruiting at: 
         <select id="gameSelection" onchange="change_game('gameSelection')">
 		 <option value="hots">Heroes of the Storm</option>
+		         <option value="lol">League of Legends</option>
             <!--<option id="general">General</option>
-            <option id="lol">League of Legends</option>
+    
             <option id="archeage">Archeage</option>
             <option id="h1z1">H1Z1</option>
             <option id="smite">Smite</option>
@@ -46,6 +47,15 @@
 				 <li><a href="http://www.joindota.com/en/forums/719-looking-to-play/723-people-to-play-with" target="blank">joindota.com</a></li>
 				  <li><a href="http://www.playdota.com/forums/forumdisplay.php?f=81" target="blank">playdota.com</a></li>
             </ul>
+		<ul id="rec_lol" style="display:none"  class="specific_section">
+      
+                <li><a href="http://boards.euw.leagueoflegends.com/en/c/team-recruitment-en" target="blank">boards.euw.leagueoflegends.com<---EUW</a></li>
+                <li><a href="http://boards.na.leagueoflegends.com/en/c/team-recruitment-en" target="blank">boards.euw.leagueoflegends.com<---NA</a></li>
+				 <li><a href="http://www.reddit.com/r/TeamRedditTeams/" target="blank">Reddit - TeamRedditTeams</a></li>
+				  <li><a href="http://www.reddit.com/r/leagueconnect" target="blank">Reddit - Leagueconnect</a></li>
+				<li><a href="http://www.reddit.com/r/botpremade" target="blank">Reddit - botpremade</a></li>
+				<li><a href="http://www.reignofgaming.net/forums/league-of-legends/team-recruitment" target="blank">reignofgaming.net</a></li>
+            </ul>
 		<h2>Recruitment template</h2>
 		 <p><b>YOUR</b> Battletag/Username: <input type="text" id="recruiterName" onchange="change_recruiter(this, 'recruiter')">
 		    <p class="alert">User is looking for group because: select a REASON why he posted(he's new to the game? tired of going solo etc.</p>
@@ -63,8 +73,13 @@
             <option value="pubs">Looking for Pubs</option>
          <!--    <option value="team">LF Team/Group</option> -->
         </select>
+		 <select id="ddl_lol" onchange="change_reason('ddl_dota')" style="display:none"  class="specific_section">
+            <option value="default">Default</option>
+            <option value="pubs">Looking for a Team</option>
+        
+        </select>
 		<input type="button" value="Generate Different Template" onclick="generateRandomTemplate()"></input></p>
-		  <p> BattleTag of the user you are recruiting(optional): <input type="text" id="fname" onchange="change_tag(this, 'prospect')">  <input type="button" value="Go">
+		  <p> BattleTag/Username of the user you are recruiting(optional): <input type="text" id="fname" onchange="change_tag(this, 'prospect')">  <input type="button" value="Go">
 		  <hots>
 		  <!--DEFAULT TEMPLATES -->
 		    <p class="alert"><i>Copy template below and paste it in the thread you will respond to</i></p>
@@ -386,9 +401,105 @@
 			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
         </p>
 		
-		 <!--PUBS OF DEFAULT TEMPLATES -->
+		 <!-- END OF PUBS TEMPLATES -->
 		 
 		</dota>
+		
+		<lol>
+		 <!-- START OF DEFAULT TEMPLATES -->
+		 <p id="lol_default_1" class="block specific_section">
+Hey! If you're looking for people to play with and you are over 16, I recommend joining a community called the Chaos Vanguard.<br/><br/>
+
+Essentially the Chaos Vanguard (CV) is a multi-gaming community that aims to provide a fun and safe environment for players. We have a lot of people from a variety of ranks to play with in our LoL Section, so there will be plenty of people to duoQ and also just have fun with!<br/><br/>
+
+We have a large website and teamspeak, and we try to host daily events for you to be able to play with people such as aram inhouses, hide and seek, defend soraka bot etc. We've also got tournaments with giveaways as well as organized ranked teams. Competitive teams also get their own channels on our teamspeak. Also we have separate channels for people who duoQ, so they won't be disturbed in the middle of the match!<br/><br/>
+
+If you ever get bored of league you could just jump down to one of our different sections for games such as Counter Strike, Heroes of the Storm, Warframe, Smite and many more.<br/><br/>
+
+Feel free to add me in-game if you have any questions!<br/><br/>
+
+Good luck with your search!<br/><br/>
+		
+<span name="recruiter" style="display:none"></span>
+
+You can find us at: <br/><br/>
+	Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		 <p id="lol_default_1" class="block specific_section">
+Hey! If you're looking for people to play with and you are over 16, I recommend joining a community called the Chaos Vanguard.<br/><br/>
+
+Essentially the Chaos Vanguard (CV) is a multi-gaming community that aims to provide a fun and safe environment for players. We have a lot of people from a variety of ranks to play with in our LoL Section, so there will be plenty of people to duoQ and also just have fun with!<br/><br/>
+
+We have a large website and teamspeak, and we try to host daily events for you to be able to play with people such as aram inhouses, hide and seek, defend soraka bot etc. We've also got tournaments with giveaways as well as organized ranked teams. Competitive teams also get their own channels on our teamspeak. Also we have separate channels for people who duoQ, so they won't be disturbed in the middle of the match!<br/><br/>
+
+If you ever get bored of league you could just jump down to one of our different sections for games such as Counter Strike, Heroes of the Storm, Warframe, Smite and many more.<br/><br/>
+
+Feel free to add me in-game if you have any questions!<br/><br/>
+
+Good luck with your search!<br/><br/>
+		
+<span name="recruiter" style="display:none"></span>
+
+You can find us at: <br/><br/>
+	Website: http://thechaosvanguard.co.uk/<br/>
+			Forums: http://forums.thechaosvanguard.co.uk/<br/>
+			TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+        </p>
+		 <p id="lol_default_2" class="block specific_section">
+		Hey! If you're looking for people to play with and you are over 16, I recommend joining a community called the Chaos Vanguard.<br/><br/>
+
+		Essentially the Chaos Vanguard (CV) is a multi-gaming community that aims to provide a fun and safe environment for players. We have a lot of people from a variety of ranks to play with in our LoL Section, so there will be plenty of people to duoQ and also just have fun with!<br/><br/>
+					
+		<span name="recruiter" style="display:none"></span>
+
+		You can find us at: <br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+					Forums: http://forums.thechaosvanguard.co.uk/<br/>
+					TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+				</p>
+		  <p id="lol_default_3" class="block specific_section">
+		Hey! If you're looking for people to play with and you are over 16, I recommend joining a community called the Chaos Vanguard.<br/><br/>
+
+		Essentially the Chaos Vanguard (CV) is a multi-gaming community that aims to provide a fun and safe environment for players. We have a lot of people from a variety of ranks to play with in our LoL Section, so there will be plenty of people to duoQ and also just have fun with!<br/><br/>
+					
+		<span name="recruiter" style="display:none"></span>
+
+		You can find us at: <br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+					Forums: http://forums.thechaosvanguard.co.uk/<br/>
+					TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+				</p>
+		 
+		  <p id="lol_default_4" class="block specific_section">
+		Hey! If you're looking for people to play with and you are over 16, I recommend joining a community called the Chaos Vanguard.<br/><br/>
+
+		Essentially the Chaos Vanguard (CV) is a multi-gaming community that aims to provide a fun and safe environment for players. We have a lot of people from a variety of ranks to play with in our LoL Section, so there will be plenty of people to duoQ and also just have fun with!<br/><br/>
+					
+		<span name="recruiter" style="display:none"></span>
+
+		You can find us at: <br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+					Forums: http://forums.thechaosvanguard.co.uk/<br/>
+					TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+				</p>
+		 
+		  <p id="lol_default_5" class="block specific_section">
+		Hey! If you're looking for people to play with and you are over 16, I recommend joining a community called the Chaos Vanguard.<br/><br/>
+
+		Essentially the Chaos Vanguard (CV) is a multi-gaming community that aims to provide a fun and safe environment for players. We have a lot of people from a variety of ranks to play with in our LoL Section, so there will be plenty of people to duoQ and also just have fun with!<br/><br/>
+					
+		<span name="recruiter" style="display:none"></span>
+
+		You can find us at: <br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+					Forums: http://forums.thechaosvanguard.co.uk/<br/>
+					TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+				</p>
+		 
+		<!-- END OF DEFAULT TEMPLATES -->
+		</lol>
 </div>
         <script src="js/main.js"></script>
     </body>
