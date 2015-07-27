@@ -18,9 +18,9 @@
 			<p> Recruiting at: 
         <select id="gameSelection" onchange="change_game('gameSelection')">
 		 <option value="hots">Heroes of the Storm</option>
-		         <option value="lol">League of Legends</option>
+		 <option value="lol">League of Legends</option>
+		 <option value="csgo">Counter Strike</option>-->
             <!--<option id="general">General</option>
-    
             <option id="archeage">Archeage</option>
             <option id="h1z1">H1Z1</option>
             <option id="smite">Smite</option>
@@ -56,6 +56,13 @@
 				<li><a href="http://www.reddit.com/r/botpremade" target="blank">Reddit - botpremade</a></li>
 				<li><a href="http://www.reignofgaming.net/forums/league-of-legends/team-recruitment" target="blank">reignofgaming.net</a></li>
             </ul>
+		<ul id="rec_csgo" style="display:none"  class="specific_section">
+      
+                <li><a href="https://www.reddit.com/r/RecruitCS/" target="blank">reddit</a></li>
+                <li><a href="http://csgoteamfinder.com/players" target="blank">csgoteamfinder.com</a></li>
+			
+            </ul>	
+			
 		<h2>Recruitment template</h2>
 		 <p><b>YOUR</b> Battletag/Username: <input type="text" id="recruiterName" onchange="change_recruiter(this, 'recruiter')">
 		    <p class="alert">User is looking for group because: select a REASON why he posted(he's new to the game? tired of going solo etc.</p>
@@ -73,9 +80,14 @@
             <option value="pubs">Looking for Pubs</option>
          <!--    <option value="team">LF Team/Group</option> -->
         </select>
-		 <select id="ddl_lol" onchange="change_reason('ddl_dota')" style="display:none"  class="specific_section">
+		 <select id="ddl_lol" onchange="change_reason('ddl_lol')" style="display:none"  class="specific_section">
             <option value="default">Default</option>
       <!--       <option value="pubs">Looking for a Team</option> -->
+        
+        </select>
+		 <select id="ddl_csgo" onchange="change_reason('ddl_csgo')" style="display:none"  class="specific_section">
+            <option value="default">Default</option>
+
         
         </select>
 		<input type="button" value="Generate Different Template" onclick="generateRandomTemplate()"></input></p>
@@ -503,6 +515,69 @@ Good luck with your search!<br/><br/>
 		 
 		<!-- END OF DEFAULT TEMPLATES -->
 		</lol>
+		<csgo>
+		<!-- START OF DEFAULT TEMPLATES -->
+		  <p id="csgo_default_1" class="block specific_section">
+		Hi <span name="prospect"></span>! The Chaos Vangaurd is recruiting new players and we are actively looking for more CS:GO Players to join rank doesn’t matter we have players ranging from Silver 1 all the way to Global Elite. 
+
+		<br/><br/> Enjoy and hope you check us out! 
+		
+		<span name="recruiter" style="display:none"></span>
+
+		<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+					Forums: http://forums.thechaosvanguard.co.uk/<br/>
+					TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+				</p>
+				
+		  <p id="csgo_default_2" class="block specific_section">
+		Hey <span name="prospect"></span> :) Come join us at The Chaos Vanguard. We are a multi-game community which is looking for new members in CS:GO. Have a look, read the rules to make sure you are able to apply and see what you think of it all. We have an entire range of players from Silver 1 to Global Elite and are a friendly bunch of people, you will most likely meet some great people in the teamspeak. 
+		<br/><br/> Enjoy and hope you check us out! 
+		
+		<span name="recruiter" style="display:none"></span>
+
+		<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+					Forums: http://forums.thechaosvanguard.co.uk/<br/>
+					TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+				</p>	
+  <p id="csgo_default_3" class="block specific_section">
+		Hi <span name="prospect"></span>! The Chaos Vangaurd is recruiting new players and we are actively looking for more CS:GO Players to join rank doesn’t matter we have players ranging from Silver 1 all the way to Global Elite. 
+
+		<br/><br/> Enjoy and hope you check us out! 
+		
+		<span name="recruiter" style="display:none"></span>
+
+		<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+					Forums: http://forums.thechaosvanguard.co.uk/<br/>
+					TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+				</p>
+				  <p id="csgo_default_4" class="block specific_section">
+		Hey <span name="prospect"></span> :) Come join us at The Chaos Vanguard. We are a multi-game community which is looking for new members in CS:GO. Have a look, read the rules to make sure you are able to apply and see what you think of it all. We have an entire range of players from Silver 1 to Global Elite and are a friendly bunch of people, you will most likely meet some great people in the teamspeak. 
+		<br/><br/> Enjoy and hope you check us out! 
+		
+		<span name="recruiter" style="display:none"></span>
+
+		<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+					Forums: http://forums.thechaosvanguard.co.uk/<br/>
+					TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+				</p>	
+				  <p id="csgo_default_5" class="block specific_section">
+		Hi <span name="prospect"></span>! The Chaos Vangaurd is recruiting new players and we are actively looking for more CS:GO Players to join rank doesn’t matter we have players ranging from Silver 1 all the way to Global Elite. 
+
+		<br/><br/> Enjoy and hope you check us out! 
+		
+		<span name="recruiter" style="display:none"></span>
+
+		<br/><br/>
+			Website: http://thechaosvanguard.co.uk/<br/>
+					Forums: http://forums.thechaosvanguard.co.uk/<br/>
+					TeamSpeak: ts3.thechaosvanguard.co.uk<br/>
+				</p>
+		<!-- END OF DEFAULT TEMPLATES -->
+		</csgo>
 </div>
         <script src="js/main.js"></script>
     </body>
